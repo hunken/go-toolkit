@@ -1,17 +1,9 @@
-package utilpackage
+package util
 
 import (
 	"net"
 	"net/url"
 	"strings"
-)
-util
-
-import (
-"git.ghtk.vn/gmicro/gmicro/util"
-"net"
-"net/url"
-"strings"
 )
 
 func CheckURLWhitelist(urlStr string, whiteListDomains []string) bool {

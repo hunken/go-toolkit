@@ -1,15 +1,9 @@
-package utilpackage
+package util
 
 import (
 	"github.com/golang-jwt/jwt"
+	"github.com/stretchr/testify/assert"
 	"testing"
-)
-util
-
-import (
-"github.com/dgrijalva/jwt-go"
-"github.com/stretchr/testify/assert"
-"testing"
 )
 
 func TestGenerateRSAKey(t *testing.T) {

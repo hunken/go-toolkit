@@ -98,12 +98,12 @@ func TestGetMySQLDataSourceName(t *testing.T) {
 		port:     7890,
 		protocol: "tcp",
 		username: "admin",
-		password: "pwd_12345",
-		dbname:   "gmicro",
+		password: "sample_pw",
+		dbname:   "dbname",
 		params:   "check=true",
 	}
 
-	want := "admin:pwd_12345@tcp(10.10.110.69:7890)/gmicro?check=true"
+	want := "admin:sample_pw@tcp(10.10.110.69:7890)/dbname?check=true"
 
 	if got := GetMySQLDataSourceName(test.host, test.port, test.protocol,
 		test.username, test.password, test.dbname, test.params); got != want {
